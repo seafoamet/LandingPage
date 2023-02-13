@@ -1,6 +1,6 @@
 * {
     border: 1px solid red;
-    font-family: "Roboto", sans-serif;
+    font-family:"fantasy";
 }
 
 a {
@@ -36,15 +36,54 @@ body {
     flex-direction: column;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container.one {
     display: flex;
     justify-content: center;
     background-color: darkblue;
     color: white;
     border: 5px solid green;
-    gap: 32px;
+    align-items: center;
+    gap: 128px;
 }
 
 .herotext {
-    width: 300px;
+    width: 400px;
+}
+
+.herotext h1 {
+    font-size: 48px;
+}
+
+button {
+    background-color: aqua;
+    border-radius: 20%;
+    padding: 8px 16px;
+    font-weight: bold;
+}
+
+.container.two {
+    flex-direction: column;
+}
+
+.cardwrapper {
+    display: flex;
+    gap: 32px;
+    text-align: center;
+    color: grey;
+    margin-bottom: 128px;
+}
+
+.card {
+    width: 200px;
+}
+
+.card img {
+    height: 200px;
+    width: auto;
 }
